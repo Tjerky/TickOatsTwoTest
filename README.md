@@ -12,4 +12,7 @@ The way the previous turns are encoded is by giving each tile of the playing boa
 - 7 is the lowerleft tile
 - 8 is the lowermid tile
 - 9 is the lowerright tile
-This way
+
+The previous moves are then a list of these numbers, indicating where every player put a mark. So the uneven places in the list (first, third, fifth, etc) are the moves of player 1 and the even places (second, fourth, sixth, etc.) are the moves of player 2.
+When applied a certain playing situation, the algorithm looks at all the next possible next moves. It figures out the outcome of these moves by assuming that the players will always make the move in their best interest. The code should be well commented. So for the full explaination, look at the code.
+The outcome of the algorithm is quite sad. It says that whatever player 1 does, player 2 will always have a winning strategy and will always be able to win.
